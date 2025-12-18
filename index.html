@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<section id="loginPage" class="card">
+<h1>🌱 EcoSmart AI</h1>
+<p>Klasifikasi Lingkungan Berbasis AI & Edukasi Sosial</p>
+<input type="text" id="username" placeholder="Masukkan nama">
+<button onclick="login()">Login</button>
+</section>
+
+
+<!-- MAIN PAGE -->
+<section id="mainPage" class="hidden">
+<header>
+<h2>Selamat Datang, <span id="user"></span> 👋</h2>
+<button class="logout" onclick="logout()">Logout</button>
+</header>
+
+
+<div class="content">
+<div class="gallery">
+<div class="img-card" onclick="classifyImage('tercemar')">
+<img src="sampah-plastik.jpg" alt="Lingkungan tercemar plastik">
+<p class="ai-label">AI: Lingkungan Tercemar</p>
+</div>
+<div class="img-card" onclick="classifyImage('hijau')">
+<img src="lingkungan-bersih-ciptakan-hidup-sehat-30.jpg" alt="Lingkungan hijau dan bersih">
+<p class="ai-label">AI: Lingkungan Hijau & Sehat</p>
+</div>
+<div class="img-card" onclick="classifyImage('polusi')">
+<img src="pencemaran-lingkungan-kenali-jenis-dampak-dan-cara-mencegahnya.jpg" alt="Pencemaran lingkungan perkotaan">
+<p class="ai-label">AI: Polusi Lingkungan</p>
+</div>
+</div>
+<p id="result"></p>
+
+
+<h3>Apa itu Klasifikasi Lingkungan Berbasis AI?</h3>
+<p>
+Klasifikasi lingkungan berbasis AI adalah teknologi yang menggunakan
+kecerdasan buatan untuk mengenali kondisi lingkungan seperti
+<b>bersih, tercemar, hijau, atau rusak</b> dari data gambar dan sensor.
+</p>
+
+
+<h3>Contoh Klasifikasi (Simulasi AI)</h3>
+<select id="environment">
+<option value="">-- Pilih Kondisi --</option>
+<option value="bersih">Lingkungan Bersih</option>
+<option value="tercemar">Lingkungan Tercemar</option>
+<option value="hijau">Lingkungan Hijau</option>
+</select>
+<button onclick="classify()">Analisis AI</button>
+
+
+<p id="result"></p>
+
+
+<h3>Edukasi Sosial</h3>
+<p>
+AI membantu masyarakat memahami dampak perilaku manusia terhadap lingkungan.
+Dengan edukasi sosial, kita diajak untuk <b>tidak membuang sampah sembarangan</b>,
+menjaga alam, dan peduli terhadap masa depan bumi.
+</p>
+</div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
